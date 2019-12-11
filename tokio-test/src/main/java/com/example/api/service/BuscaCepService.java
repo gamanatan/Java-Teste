@@ -11,7 +11,7 @@ public class BuscaCepService {
 	
 	public String find(RestTemplate restTemplate) {
 		Endereco endereco = restTemplate.getForObject(
-				"https://viacep.com.br/ws/06330000/json/", Endereco.class);
+				"https://viacep.com.br/ws/07261130/json/", Endereco.class);
 		return endereco.toString();
 	}
 }
